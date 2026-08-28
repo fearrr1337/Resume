@@ -1,0 +1,175 @@
+:root {
+    --bg: #ffffff;
+    --text: #222222;
+    --card: #f2f2f2;
+    --accent: #5b5cff;
+    --border: #cccccc;
+}
+
+body.dark {
+    --bg: #1e1e1e;
+    --text: #ffffff;
+    --card: #2c2c2c;
+    --accent: #7778ff;
+    --border: #555555;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button,
+input {
+    padding: 10px;
+    background: var(--card);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+button {
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: var(--text);
+    opacity: 0.6;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.skill {
+    padding: 20px;
+    text-align: center;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#empty {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.projects article {
+    min-height: 160px;
+    padding: 20px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.projects h3 {
+    margin-top: 0;
+    color: var(--accent);
+}
+
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: var(--card);
+    border-top: 1px solid var(--border);
+}
+
+
+@media (max-width: 768px) {
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .controls {
+        flex-direction: column;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+}

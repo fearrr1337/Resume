@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h2>Резюме</h2>
+            <button id="themeButton">🌙</button>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Бородин Пётр</h1>
+
+                <h2>Начинающий разработчик/DataScience специалист</h2>
+
+                <p>инфа обо мне</p>
+            </div>
+        </section>
+
+
+        <section class="hero">
+            <div class="container">
+                <h2>Обо мне</h2>
+
+                <p>инфа обо мне</p>
+            </div>
+        </section>
+
+        <section class="hero">
+            <div class="container">
+                <h2>Навыки</h2>
+                
+                <div class="controls">
+                    <div class="filters">
+                        <button class="filter active" data-category="all">
+                            Все
+                        </button>
+                        
+                        <button class="filter" data-category="ML">
+                            ML
+                        </button>
+
+                        <button class="filter" data-category="desktop-dev">
+                            Desktop dev
+                        </button>
+                        
+                        <button class="filter" data-category="frontend">
+                            Frontend
+                        </button>
+                        
+                        <button class="filter" data-category="backend">
+                            Backend
+                        </button>
+                        
+                        <button class="filter" data-category="tools">
+                            Tools
+                        </button>
+                    </div>
+
+                    <input type="text" id="search" placeholder="Поиск навыка...">
+                </div>
+
+                <div class="skills" id="skills"></div>
+
+                <p id="empty">Ничего не найдено</p>
+
+
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container">
+
+                <h2>Проекты</h2>
+
+                <div class="projects">
+
+                    <article>
+                        <h3>Проект 1</h3>
+                        <p>Описание проекта</p>
+                    </article>
+
+                    <article>
+                        <h3>Проект 2</h3>
+                        <p>Описание проекта</p>
+                    </article>
+
+                    <article>
+                        <h3>Проект 3</h3>
+                        <p>Описание проекта</p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+        
+
+        <section>
+            <div class="container">
+                <h2>Контакты</h2>
+
+                <p>Email: </p>
+                <p>Github: </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Бородин Пётр</p>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
