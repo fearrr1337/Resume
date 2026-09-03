@@ -31,6 +31,11 @@ body {
     margin: auto;
 }
 
+.container p {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
 header {
     padding: 15px 0;
     border-bottom: 1px solid var(--border);
@@ -61,7 +66,7 @@ input::placeholder {
 }
 
 section {
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .hero {
@@ -125,7 +130,7 @@ section {
 }
 
 .projects article {
-    min-height: 160px;
+    min-height: 220px;
     padding: 20px;
     background: var(--card);
     border: 1px solid var(--border);
@@ -172,4 +177,36 @@ footer {
     .hero h1 {
         font-size: 36px;
     }
+}
+
+.project-link {
+    display: block;            
+    text-decoration: none;     
+    color: inherit;           
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-link:hover article {
+    background: var(--card);  
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+}
+
+body.dark .project-link:hover article {
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.08);
+}
+
+.contact-label {
+    font-weight: bold;
+}
+
+.contact-link {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-link:hover {
+    color: var(--accent);
+    text-decoration: underline;
 }
